@@ -1,10 +1,15 @@
 //
-//  Contact+CoreData.swift
-//  GJContacts
+//  Contact+CoreDataProperties.swift
+//  
 //
 //  Created by Bushra Sagir on 11/19/19.
-//  Copyright © 2019 bushraSagir. All rights reserved.
 //
+//  This file was automatically generated and should not be edited.
+//
+
+import Foundation
+import CoreData
+
 
 import Foundation
 import CoreData
@@ -14,8 +19,8 @@ extension Contact {
     let seprator = (firstName != nil) ? " " : ""
     return "\(firstName ?? "")\(seprator)\(lastName ?? "")"
   }
-
-  public var sectionTitle: String {
+  
+  @objc public var sectionTitle: String {
     let firstCharString = firstName?.first?.uppercased() ?? ""
     if firstCharString >= "A" && firstCharString <= "Z" {
       return firstCharString
@@ -28,7 +33,7 @@ extension Contact {
   }
   
   public class func getContact(id: Int) -> Contact? {
-    let fetchRequest: NSFetchRequest<Contact> = Contact.fetchRequest()
+    let fetchRequest: NSFetchRequest<Contact> = Contact.fetchContactRequest()
     fetchRequest.predicate = NSPredicate(format: "id=%ld", id)
     fetchRequest.fetchLimit = 1
     do {
@@ -57,22 +62,22 @@ extension Contact {
     }
   }
   
-//  func getDetailsMetadata() -> [ContactMetadata] {
-//    let phoneMetadata = ContactMetadata(desc: NSLocalizedString("mobile", comment: ""),
-//                                        info: phoneNumber, type: .mobile, keyboardType: .phonePad)
-//    let emailMetadata = ContactMetadata(desc: NSLocalizedString("email", comment: ""),
-//                                        info: email, type: .email, keyboardType: .emailAddress)
-//    return [phoneMetadata, emailMetadata]
-//  }
-//
-//  func getEditMetaData() -> [ContactMetadata] {
-//    let firstNameMetaData = ContactMetadata(desc: NSLocalizedString("First Name", comment: ""),
-//                                            info: firstName, type: .firstName)
-//
-//    let lastNameMetaData = ContactMetadata(desc: NSLocalizedString("Last Name", comment: ""),
-//                                           info: lastName, type: .lastName)
-//
-//    return [firstNameMetaData, lastNameMetaData] + getDetailsMetadata()
-//  }
+  //  func getDetailsMetadata() -> [ContactMetadata] {
+  //    let phoneMetadata = ContactMetadata(desc: NSLocalizedString("mobile", comment: ""),
+  //                                        info: phoneNumber, type: .mobile, keyboardType: .phonePad)
+  //    let emailMetadata = ContactMetadata(desc: NSLocalizedString("email", comment: ""),
+  //                                        info: email, type: .email, keyboardType: .emailAddress)
+  //    return [phoneMetadata, emailMetadata]
+  //  }
+  //
+  //  func getEditMetaData() -> [ContactMetadata] {
+  //    let firstNameMetaData = ContactMetadata(desc: NSLocalizedString("First Name", comment: ""),
+  //                                            info: firstName, type: .firstName)
+  //
+  //    let lastNameMetaData = ContactMetadata(desc: NSLocalizedString("Last Name", comment: ""),
+  //                                           info: lastName, type: .lastName)
+  //
+  //    return [firstNameMetaData, lastNameMetaData] + getDetailsMetadata()
+  //  }
 }
 

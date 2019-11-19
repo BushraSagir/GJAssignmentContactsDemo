@@ -21,11 +21,11 @@ class ContactListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
-//  func config(contact: Contact) {
-//    let viewModel = ContactViewModel(contact: contact)
-//    contactName.text = viewModel.name
-//    contactImageView.image = UIImage.Contact.placeHolder
-//    favouriteImageView.isHidden = !viewModel.isFavorite
-//    favouriteImageView.image = viewModel.isFavorite ? UIImage.Contact.showFavorite : nil
-//  }
+  func config(contact: Contact) {
+    let viewModel = ContactViewModel(contact: contact)
+    contactName.text = viewModel.name
+    contactImageView.image = #imageLiteral(resourceName: "PlaceholderPhoto")
+    favouriteImageView.isHidden = !viewModel.isFavorite
+    favouriteImageView.image = viewModel.isFavorite ? #imageLiteral(resourceName: "HomeFavourite") : nil
+  }
 }

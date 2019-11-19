@@ -3,10 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10AA0E32783C8362C4A6DD6A /* Pods_GJContactsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78A4E9F90A05BA7FF682D3 /* Pods_GJContactsUITests.framework */; };
+		B04FFC0400B69507C28A1653 /* Pods_GJContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9492388A600B1FBC372B27FB /* Pods_GJContacts.framework */; };
+		E217F2B623841A7B00CAC93F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2B523841A7B00CAC93F /* HTTPClient.swift */; };
+		E217F2B8238426FB00CAC93F /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2B7238426FB00CAC93F /* APIProtocol.swift */; };
+		E217F2BA2384278200CAC93F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2B92384278200CAC93F /* HTTPMethod.swift */; };
+		E217F2BC23842D2D00CAC93F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2BB23842D2D00CAC93F /* Constants.swift */; };
+		E217F2BE23842ED400CAC93F /* URLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2BD23842ED400CAC93F /* URLResponseExtension.swift */; };
+		E217F2C0238433F700CAC93F /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2BF238433F700CAC93F /* ServerError.swift */; };
+		E217F2C22384394A00CAC93F /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2C12384394A00CAC93F /* ErrorExtension.swift */; };
+		E217F2C423843AE400CAC93F /* ContactWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2C323843AE400CAC93F /* ContactWebService.swift */; };
+		E217F2C72384425000CAC93F /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2C52384425000CAC93F /* Contact+CoreDataProperties.swift */; };
+		E217F2C82384425000CAC93F /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2C62384425000CAC93F /* Contact+CoreDataClass.swift */; };
+		E217F2CA2384520C00CAC93F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2C92384520C00CAC93F /* UIColorExtension.swift */; };
+		E217F2D02384538900CAC93F /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2CF2384538900CAC93F /* ContactViewModel.swift */; };
+		E217F2D2238453A700CAC93F /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2D1238453A700CAC93F /* ContactListViewModel.swift */; };
+		E217F2D723845C3A00CAC93F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2D623845C3A00CAC93F /* Bindable.swift */; };
+		E217F2D923845C4C00CAC93F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217F2D823845C4C00CAC93F /* UIViewExtension.swift */; };
+		E217F2DB23845E5600CAC93F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E217F2DA23845E5600CAC93F /* Color.xcassets */; };
 		E25555172382FA650052AF8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25555162382FA650052AF8E /* AppDelegate.swift */; };
 		E255551C2382FA650052AF8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E255551A2382FA650052AF8E /* Main.storyboard */; };
 		E255551F2382FA650052AF8E /* GJContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E255551D2382FA650052AF8E /* GJContacts.xcdatamodeld */; };
@@ -15,10 +33,9 @@
 		E255552F2382FA660052AF8E /* GJContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255552E2382FA660052AF8E /* GJContactsTests.swift */; };
 		E255553A2382FA660052AF8E /* GJContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25555392382FA660052AF8E /* GJContactsUITests.swift */; };
 		E25555872383E8B60052AF8E /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25555862383E8B60052AF8E /* ContactListViewController.swift */; };
-		E25555892383EE5F0052AF8E /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25555882383EE5F0052AF8E /* Contacts.swift */; };
 		E255558B2383EF450052AF8E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255558A2383EF450052AF8E /* CoreDataManager.swift */; };
-		E255558D2383F0850052AF8E /* Contact+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255558C2383F0850052AF8E /* Contact+CoreData.swift */; };
 		E25555932383F5C30052AF8E /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25555912383F5C30052AF8E /* ContactListTableViewCell.swift */; };
+		F4877F1E6771F39254EDF8F9 /* Pods_GJContactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F93255A74DA68A98CC6B28B /* Pods_GJContactsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +56,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFA61C4B8CD848EC9DD843D /* Pods-GJContactsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJContactsUITests.debug.xcconfig"; path = "Target Support Files/Pods-GJContactsUITests/Pods-GJContactsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F93255A74DA68A98CC6B28B /* Pods_GJContactsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJContactsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1627A76642B3375FCFB7FF30 /* Pods-GJContactsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJContactsUITests.release.xcconfig"; path = "Target Support Files/Pods-GJContactsUITests/Pods-GJContactsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		32D61575E559EDF7F566E2EB /* Pods-GJContacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJContacts.release.xcconfig"; path = "Target Support Files/Pods-GJContacts/Pods-GJContacts.release.xcconfig"; sourceTree = "<group>"; };
+		4D78A4E9F90A05BA7FF682D3 /* Pods_GJContactsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJContactsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B61D96A92B26DDB6EAD608E /* Pods-GJContactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJContactsTests.release.xcconfig"; path = "Target Support Files/Pods-GJContactsTests/Pods-GJContactsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9492388A600B1FBC372B27FB /* Pods_GJContacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJContacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9DB6B0EC311014D4C3AA50 /* Pods-GJContactsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJContactsTests.debug.xcconfig"; path = "Target Support Files/Pods-GJContactsTests/Pods-GJContactsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E217F2B523841A7B00CAC93F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		E217F2B7238426FB00CAC93F /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		E217F2B92384278200CAC93F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E217F2BB23842D2D00CAC93F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E217F2BD23842ED400CAC93F /* URLResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponseExtension.swift; sourceTree = "<group>"; };
+		E217F2BF238433F700CAC93F /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		E217F2C12384394A00CAC93F /* ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		E217F2C323843AE400CAC93F /* ContactWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWebService.swift; sourceTree = "<group>"; };
+		E217F2C52384425000CAC93F /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E217F2C62384425000CAC93F /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E217F2C92384520C00CAC93F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		E217F2CF2384538900CAC93F /* ContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		E217F2D1238453A700CAC93F /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		E217F2D623845C3A00CAC93F /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		E217F2D823845C4C00CAC93F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		E217F2DA23845E5600CAC93F /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		E25555132382FA650052AF8E /* GJContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25555162382FA650052AF8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E255551B2382FA650052AF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,10 +94,9 @@
 		E25555392382FA660052AF8E /* GJContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContactsUITests.swift; sourceTree = "<group>"; };
 		E255553B2382FA660052AF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25555862383E8B60052AF8E /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
-		E25555882383EE5F0052AF8E /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		E255558A2383EF450052AF8E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		E255558C2383F0850052AF8E /* Contact+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreData.swift"; sourceTree = "<group>"; };
 		E25555912383F5C30052AF8E /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		E5B3CE36612DE9BF32E39F02 /* Pods-GJContacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJContacts.debug.xcconfig"; path = "Target Support Files/Pods-GJContacts/Pods-GJContacts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04FFC0400B69507C28A1653 /* Pods_GJContacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4877F1E6771F39254EDF8F9 /* Pods_GJContactsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,19 +120,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AA0E32783C8362C4A6DD6A /* Pods_GJContactsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AE29BFD71E908A8FE5DFEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9492388A600B1FBC372B27FB /* Pods_GJContacts.framework */,
+				0F93255A74DA68A98CC6B28B /* Pods_GJContactsTests.framework */,
+				4D78A4E9F90A05BA7FF682D3 /* Pods_GJContactsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BD1BD6FD7A207063894DC61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5B3CE36612DE9BF32E39F02 /* Pods-GJContacts.debug.xcconfig */,
+				32D61575E559EDF7F566E2EB /* Pods-GJContacts.release.xcconfig */,
+				DC9DB6B0EC311014D4C3AA50 /* Pods-GJContactsTests.debug.xcconfig */,
+				7B61D96A92B26DDB6EAD608E /* Pods-GJContactsTests.release.xcconfig */,
+				0BFA61C4B8CD848EC9DD843D /* Pods-GJContactsUITests.debug.xcconfig */,
+				1627A76642B3375FCFB7FF30 /* Pods-GJContactsUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E217F2CE2384538900CAC93F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E217F2CF2384538900CAC93F /* ContactViewModel.swift */,
+				E217F2D1238453A700CAC93F /* ContactListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E217F2D523845C3A00CAC93F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E217F2D623845C3A00CAC93F /* Bindable.swift */,
+				E217F2D823845C4C00CAC93F /* UIViewExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		E255550A2382FA650052AF8E = {
 			isa = PBXGroup;
 			children = (
+				E217F2DA23845E5600CAC93F /* Color.xcassets */,
 				E25555152382FA650052AF8E /* GJContacts */,
 				E255552D2382FA660052AF8E /* GJContactsTests */,
 				E25555382382FA660052AF8E /* GJContactsUITests */,
 				E25555142382FA650052AF8E /* Products */,
+				9BD1BD6FD7A207063894DC61 /* Pods */,
+				67AE29BFD71E908A8FE5DFEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +194,10 @@
 		E25555152382FA650052AF8E /* GJContacts */ = {
 			isa = PBXGroup;
 			children = (
+				E217F2D523845C3A00CAC93F /* Utilities */,
+				E217F2CE2384538900CAC93F /* ViewModel */,
+				E217F2C62384425000CAC93F /* Contact+CoreDataClass.swift */,
+				E217F2C52384425000CAC93F /* Contact+CoreDataProperties.swift */,
 				E25555922383F5C30052AF8E /* Networking */,
 				E25555902383F5C30052AF8E /* Views */,
 				E25555162382FA650052AF8E /* AppDelegate.swift */,
@@ -116,9 +207,8 @@
 				E25555252382FA660052AF8E /* Info.plist */,
 				E255551D2382FA650052AF8E /* GJContacts.xcdatamodeld */,
 				E25555862383E8B60052AF8E /* ContactListViewController.swift */,
-				E25555882383EE5F0052AF8E /* Contacts.swift */,
 				E255558A2383EF450052AF8E /* CoreDataManager.swift */,
-				E255558C2383F0850052AF8E /* Contact+CoreData.swift */,
+				E217F2C92384520C00CAC93F /* UIColorExtension.swift */,
 			);
 			path = GJContacts;
 			sourceTree = "<group>";
@@ -152,6 +242,14 @@
 		E25555922383F5C30052AF8E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E217F2B523841A7B00CAC93F /* HTTPClient.swift */,
+				E217F2B7238426FB00CAC93F /* APIProtocol.swift */,
+				E217F2B92384278200CAC93F /* HTTPMethod.swift */,
+				E217F2BB23842D2D00CAC93F /* Constants.swift */,
+				E217F2BD23842ED400CAC93F /* URLResponseExtension.swift */,
+				E217F2BF238433F700CAC93F /* ServerError.swift */,
+				E217F2C12384394A00CAC93F /* ErrorExtension.swift */,
+				E217F2C323843AE400CAC93F /* ContactWebService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -163,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E255553E2382FA660052AF8E /* Build configuration list for PBXNativeTarget "GJContacts" */;
 			buildPhases = (
+				46F3EB55F0318D1EED7DD822 /* [CP] Check Pods Manifest.lock */,
 				E255550F2382FA650052AF8E /* Sources */,
 				E25555102382FA650052AF8E /* Frameworks */,
 				E25555112382FA650052AF8E /* Resources */,
+				5B93F4797322C38F0F35F87F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E25555412382FA660052AF8E /* Build configuration list for PBXNativeTarget "GJContactsTests" */;
 			buildPhases = (
+				70B02D6A296B671FE1F92BDA /* [CP] Check Pods Manifest.lock */,
 				E25555262382FA660052AF8E /* Sources */,
 				E25555272382FA660052AF8E /* Frameworks */,
 				E25555282382FA660052AF8E /* Resources */,
@@ -198,6 +299,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E25555442382FA660052AF8E /* Build configuration list for PBXNativeTarget "GJContactsUITests" */;
 			buildPhases = (
+				800B4CE6B241F709DFC71953 /* [CP] Check Pods Manifest.lock */,
 				E25555312382FA660052AF8E /* Sources */,
 				E25555322382FA660052AF8E /* Frameworks */,
 				E25555332382FA660052AF8E /* Resources */,
@@ -261,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25555242382FA660052AF8E /* LaunchScreen.storyboard in Resources */,
+				E217F2DB23845E5600CAC93F /* Color.xcassets in Resources */,
 				E25555212382FA660052AF8E /* Assets.xcassets in Resources */,
 				E255551C2382FA650052AF8E /* Main.storyboard in Resources */,
 			);
@@ -282,17 +385,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46F3EB55F0318D1EED7DD822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GJContacts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B93F4797322C38F0F35F87F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GJContacts/Pods-GJContacts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GJContacts/Pods-GJContacts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GJContacts/Pods-GJContacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70B02D6A296B671FE1F92BDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GJContactsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800B4CE6B241F709DFC71953 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GJContactsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E255550F2382FA650052AF8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E217F2BE23842ED400CAC93F /* URLResponseExtension.swift in Sources */,
+				E217F2C423843AE400CAC93F /* ContactWebService.swift in Sources */,
+				E217F2D723845C3A00CAC93F /* Bindable.swift in Sources */,
 				E255558B2383EF450052AF8E /* CoreDataManager.swift in Sources */,
+				E217F2BC23842D2D00CAC93F /* Constants.swift in Sources */,
+				E217F2D02384538900CAC93F /* ContactViewModel.swift in Sources */,
+				E217F2C72384425000CAC93F /* Contact+CoreDataProperties.swift in Sources */,
 				E25555872383E8B60052AF8E /* ContactListViewController.swift in Sources */,
+				E217F2B623841A7B00CAC93F /* HTTPClient.swift in Sources */,
 				E255551F2382FA650052AF8E /* GJContacts.xcdatamodeld in Sources */,
+				E217F2D923845C4C00CAC93F /* UIViewExtension.swift in Sources */,
+				E217F2D2238453A700CAC93F /* ContactListViewModel.swift in Sources */,
+				E217F2B8238426FB00CAC93F /* APIProtocol.swift in Sources */,
 				E25555172382FA650052AF8E /* AppDelegate.swift in Sources */,
-				E25555892383EE5F0052AF8E /* Contacts.swift in Sources */,
-				E255558D2383F0850052AF8E /* Contact+CoreData.swift in Sources */,
+				E217F2C82384425000CAC93F /* Contact+CoreDataClass.swift in Sources */,
+				E217F2CA2384520C00CAC93F /* UIColorExtension.swift in Sources */,
+				E217F2C0238433F700CAC93F /* ServerError.swift in Sources */,
+				E217F2BA2384278200CAC93F /* HTTPMethod.swift in Sources */,
+				E217F2C22384394A00CAC93F /* ErrorExtension.swift in Sources */,
 				E25555932383F5C30052AF8E /* ContactListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +668,7 @@
 		};
 		E255553F2382FA660052AF8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B3CE36612DE9BF32E39F02 /* Pods-GJContacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +687,7 @@
 		};
 		E25555402382FA660052AF8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D61575E559EDF7F566E2EB /* Pods-GJContacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +706,7 @@
 		};
 		E25555422382FA660052AF8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9DB6B0EC311014D4C3AA50 /* Pods-GJContactsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +727,7 @@
 		};
 		E25555432382FA660052AF8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B61D96A92B26DDB6EAD608E /* Pods-GJContactsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +748,7 @@
 		};
 		E25555452382FA660052AF8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFA61C4B8CD848EC9DD843D /* Pods-GJContactsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -561,6 +768,7 @@
 		};
 		E25555462382FA660052AF8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1627A76642B3375FCFB7FF30 /* Pods-GJContactsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
