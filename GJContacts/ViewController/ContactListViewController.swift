@@ -145,8 +145,8 @@ extension ContactListViewController: UITableViewDataSource {
 
 extension ContactListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    let contact = fetchedResultController!.object(at: indexPath)
-//    let contactDetailsViewController = ContactDetailsViewController.get(contact: contact)
-//    navigationController?.pushViewController(contactDetailsViewController, animated: true)
+    let contact = fetchedResultController!.object(at: indexPath)
+    let contactDetailsViewController = ContactDetailViewController.get(contact)
+    navigationController?.pushViewController(contactDetailsViewController, animated: true)
   }
 }

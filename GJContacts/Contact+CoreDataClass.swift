@@ -16,12 +16,12 @@ public class Contact: NSManagedObject, Codable {
   @NSManaged public var lastName: String?
   @NSManaged public var firstName: String?
   @NSManaged public var profilePic: String?
-  @NSManaged public var favourite: Bool
+  @NSManaged public var favorite: Bool
   @NSManaged public var email: String?
   @NSManaged public var phoneNumber: String?
   
   enum CodingKeys: String, CodingKey {
-    case id, favourite, email
+    case id, favorite, email
     case firstName = "first_name"
     case lastName = "last_name"
     case profilePic = "profile_pic"
@@ -34,7 +34,7 @@ public class Contact: NSManagedObject, Codable {
     let firstName = try container.decodeIfPresent(String.self, forKey: .firstName)
     let lastName = try container.decodeIfPresent(String.self, forKey: .lastName)
     let profilePic = try container.decodeIfPresent(String.self, forKey: .profilePic)
-    let favourite = try container.decodeIfPresent(Bool.self, forKey: .favourite) ?? false
+    let favorite = try container.decodeIfPresent(Bool.self, forKey: .favorite) ?? false
     let phoneNumber = try container.decodeIfPresent(String.self, forKey: .phoneNumber)
     let email = try container.decodeIfPresent(String.self, forKey: .email)
     
@@ -47,7 +47,7 @@ public class Contact: NSManagedObject, Codable {
     self.firstName = firstName
     self.lastName = lastName
     self.profilePic = profilePic
-    self.favourite = favourite
+    self.favorite = favorite
     self.phoneNumber = phoneNumber
     self.email = email
     
@@ -55,7 +55,7 @@ public class Contact: NSManagedObject, Codable {
       entity.firstName = firstName
       entity.lastName = lastName
       entity.profilePic = profilePic
-      entity.favourite = favourite
+      entity.favorite = favorite
       entity.phoneNumber = phoneNumber
       entity.email = email
     } else {
@@ -68,7 +68,7 @@ public class Contact: NSManagedObject, Codable {
     try container.encode(firstName, forKey: .firstName)
     try container.encode(lastName, forKey: .lastName)
     try container.encode(profilePic, forKey: .profilePic)
-    try container.encode(favourite, forKey: .favourite)
+    try container.encode(favorite, forKey: .favorite)
     try container.encode(phoneNumber, forKey: .phoneNumber)
     try container.encode(email, forKey: .email)
   }

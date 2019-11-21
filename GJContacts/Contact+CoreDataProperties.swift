@@ -62,22 +62,22 @@ extension Contact {
     }
   }
   
-  //  func getDetailsMetadata() -> [ContactMetadata] {
-  //    let phoneMetadata = ContactMetadata(desc: NSLocalizedString("mobile", comment: ""),
-  //                                        info: phoneNumber, type: .mobile, keyboardType: .phonePad)
-  //    let emailMetadata = ContactMetadata(desc: NSLocalizedString("email", comment: ""),
-  //                                        info: email, type: .email, keyboardType: .emailAddress)
-  //    return [phoneMetadata, emailMetadata]
-  //  }
-  //
-  //  func getEditMetaData() -> [ContactMetadata] {
-  //    let firstNameMetaData = ContactMetadata(desc: NSLocalizedString("First Name", comment: ""),
-  //                                            info: firstName, type: .firstName)
-  //
-  //    let lastNameMetaData = ContactMetadata(desc: NSLocalizedString("Last Name", comment: ""),
-  //                                           info: lastName, type: .lastName)
-  //
-  //    return [firstNameMetaData, lastNameMetaData] + getDetailsMetadata()
-  //  }
+    func getDetailsMetadata() -> [ContactDetaildata] {
+      let phoneMetadata = ContactDetaildata(desc: NSLocalizedString("mobile", comment: ""),
+                                          info: phoneNumber, type: .mobile, keyboardType: .phonePad)
+      let emailMetadata = ContactDetaildata(desc: NSLocalizedString("email", comment: ""),
+                                          info: email, type: .email, keyboardType: .emailAddress)
+      return [phoneMetadata, emailMetadata]
+    }
+  
+    func getEditMetaData() -> [ContactDetaildata] {
+      let firstNameMetaData = ContactDetaildata(desc: NSLocalizedString("First Name", comment: ""),
+                                              info: firstName, type: .firstName)
+  
+      let lastNameMetaData = ContactDetaildata(desc: NSLocalizedString("Last Name", comment: ""),
+                                             info: lastName, type: .lastName)
+  
+      return [firstNameMetaData, lastNameMetaData] + getDetailsMetadata()
+    }
 }
 

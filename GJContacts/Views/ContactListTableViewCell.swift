@@ -25,7 +25,7 @@ class ContactListTableViewCell: UITableViewCell {
     let viewModel = ContactViewModel(contact: contact)
     contactName.text = viewModel.name
     contactImageView.image = #imageLiteral(resourceName: "PlaceholderPhoto")
-    favouriteImageView.isHidden = !viewModel.isFavorite
-    favouriteImageView.image = viewModel.isFavorite ? #imageLiteral(resourceName: "HomeFavourite") : nil
+    favouriteImageView.isHidden = !viewModel.isFavourite
+    favouriteImageView.image = viewModel.isFavourite ? #imageLiteral(resourceName: "HomeFavourite") : nil
   }
 }
