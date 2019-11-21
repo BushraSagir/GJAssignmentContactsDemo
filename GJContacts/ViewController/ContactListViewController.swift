@@ -65,6 +65,10 @@ class ContactListViewController: UIViewController {
     viewModel.getContacts()
   }
 
+  @IBAction func addNewContactPressed(_ sender: UIBarButtonItem) {
+    AddContactViewController.present(contact: nil)
+  }
+  
   private func performFetchRequest() {
     do {
       try fetchedResultController?.performFetch()

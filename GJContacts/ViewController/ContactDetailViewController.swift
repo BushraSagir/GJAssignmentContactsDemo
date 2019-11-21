@@ -37,7 +37,8 @@ class ContactDetailViewController: UIViewController {
   // MARK: - View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    userImageView.layer.cornerRadius = userImageView.bounds.height / 2
+    userImageView.layer.masksToBounds = true
     setupTableView()
     setupBindingAndGetContact()
     setupNavigationBarButtonItems()
@@ -105,7 +106,7 @@ class ContactDetailViewController: UIViewController {
   
   // MARK: - Actions
   @objc private func editBarButtonItemAction() {
-//    AddContactViewController.present(contact: viewModel.contact.value, delegate: self)
+    AddContactViewController.present(contact: viewModel.contact.value, delegate: self)
   }
   
   @IBAction func messageTapGestureAction(_ sender: UITapGestureRecognizer) {
@@ -179,8 +180,8 @@ extension ContactDetailViewController: UITableViewDelegate {
   }
 }
 
-//extension ContactDetailViewController: AddContactViewControllerDelegate {
-//  func contactSyncSuccessfully(contact: Contact) {
-//    viewModel.contact.value = contact
-//  }
-//}
+extension ContactDetailViewController: AddContactViewControllerDelegate {
+  func contactSyncSuccessfully(contact: Contact) {
+    viewModel.contact.value = contact
+  }
+}

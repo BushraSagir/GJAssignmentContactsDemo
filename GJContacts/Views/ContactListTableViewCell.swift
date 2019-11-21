@@ -12,10 +12,14 @@ class ContactListTableViewCell: UITableViewCell {
   @IBOutlet weak var contactImageView: UIImageView!
   @IBOutlet weak var contactName: UILabel!
   @IBOutlet weak var favouriteImageView: UIImageView!
+
   override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    super.awakeFromNib()
+    contactImageView.layer.cornerRadius = contactImageView.frame.height / 2
+    contactImageView.layer.masksToBounds = true
+    contactImageView.clipsToBounds = true
+    
+  }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

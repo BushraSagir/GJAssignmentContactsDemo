@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Bindable<T> {
   typealias Listener = (T) -> Void
@@ -30,5 +31,19 @@ class Bindable<T> {
   func bind(listener: Listener?) {
     self.listener = listener
     listener?(value)
+  }
+}
+
+class BindableTextField: UITextField {
+  typealias Listener = (String) -> Void
+  var textChanged: Listener = { _ in }
+  
+  func bind(listener: @escaping Listener) {
+    self.textChanged = listener
+    self.addTarget(self, action: #selector(textFieldDidChanged(_:)), for: .editingChanged)
+  }
+  
+  @objc func textFieldDidChanged(_ textField: UITextField) {
+    self.textChanged(textField.text!)
   }
 }
