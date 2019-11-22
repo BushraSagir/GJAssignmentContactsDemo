@@ -19,6 +19,7 @@ class ContactListViewController: UIViewController {
       super.viewDidLoad()
       contactTableView.delegate = self
       contactTableView.dataSource = self
+      contactTableView.accessibilityIdentifier = "contactListTableView"
       setupFetchedResultController()
       setupBindingAndGetContacts()
         // Do any additional setup after loading the view.
@@ -115,7 +116,6 @@ extension ContactListViewController: NSFetchedResultsControllerDelegate {
   func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
     contactTableView.endUpdates()
   }
-  
 }
 
 // MARK: - UITableView Data Source

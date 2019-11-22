@@ -49,7 +49,6 @@ extension Contact {
     let fetchRequest: NSFetchRequest<NSFetchRequestResult> = Contact.fetchRequest()
     let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
     deleteRequest.resultType = .resultTypeObjectIDs
-    
     // perform the delete
     do {
       let managedObjectContext = CoreDataManager.shared.managedObjectContext

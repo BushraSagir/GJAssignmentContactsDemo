@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import GJContacts
+//@testable import MBProgressHUD
 
 class GJContactsTests: XCTestCase {
 

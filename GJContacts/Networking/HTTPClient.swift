@@ -16,12 +16,12 @@ class HTTPClient {
   static let shared = HTTPClient(session: URLSession.shared)
   
   // MARK: - Private Properties
-  private let session: URLSession
-  private var task: URLSessionDataTask?
+  private let session: URLSessionProtocol
+  private var task: URLSessionDataTaskProtocol?
   private var completionResult: CompletionResult?
   
   // MARK: - Initialiser
-  init(session: URLSession) {
+  init(session: URLSessionProtocol) {
     self.session = session
   }
   

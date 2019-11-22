@@ -67,6 +67,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="RKF-62-MQK" secondAttribute="trailing" constant="16" id="whf-WF-nXh"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="ContactListTableViewCell"/>
                                         <viewLayoutGuide key="safeArea" id="Rmx-Ez-2gx"/>
                                         <connections>
                                             <outlet property="contactImageView" destination="Jd0-KQ-XDP" id="lJo-Bx-HN0"/>
